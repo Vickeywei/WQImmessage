@@ -1,0 +1,70 @@
+PODS:
+  - Archimedes (1.1)
+  - IQKeyboardManager (4.0.8)
+  - M80AttributedLabel (1.5.0)
+  - Masonry (1.0.2)
+  - NIMKit/Core (1.1.0):
+    - M80AttributedLabel (~> 1.5.0)
+    - SDWebImage (~> 3.8.2)
+    - SVProgressHUD (~> 2.0.3)
+    - Toast (~> 3.0)
+    - TZImagePickerController (~> 1.7.7)
+  - NIMKit/Full (1.1.0):
+    - NIMKit/Core
+    - NIMSDK (~> 3.4.0)
+  - NIMSDK (3.4.0)
+  - Reachability (3.1.1)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - ReactiveCocoaLayout (0.4):
+    - Archimedes
+    - ReactiveCocoa (~> 2.0)
+  - ReactiveViewModel (0.3):
+    - ReactiveCocoa (~> 2.4)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SVProgressHUD (2.0.4)
+  - Toast (3.1.0)
+  - TZImagePickerController (1.7.8)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - IQKeyboardManager
+  - Masonry
+  - NIMKit/Full
+  - NIMSDK (~> 3.4.0)
+  - Reachability (~> 3.1.1)
+  - ReactiveCocoa
+  - ReactiveCocoaLayout
+  - ReactiveViewModel
+  - Toast (~> 3.0)
+  - YYKit (~> 1.0.9)
+
+SPEC CHECKSUMS:
+  Archimedes: a181c40a4de8d6bb8ee21bb0f89e9cd758fbb3ce
+  IQKeyboardManager: 1a8189fa153bf09044355ee0ad36826f6767e7f7
+  M80AttributedLabel: f2bf6608c3fa5475d3f753d4cc7e41dc2359c6c2
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  NIMKit: 324e362e66ab1fc85c44e68f9765a1103284539d
+  NIMSDK: 9dd438eb2915d61881dbc761bc6de7b01d8a46ff
+  Reachability: dd9aa4fb6667b9f787690a74f53cb7634ce99893
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  ReactiveCocoaLayout: d4bf94128119e5c56ba7425a296d58e1e9a4d7da
+  ReactiveViewModel: 58918dcbcec2d3151195ab1ed9163c57a8163999
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SVProgressHUD: bfde85ed6c573ea802b9cb37894ed9b629034f1b
+  Toast: 14a93686d6c8bfe2727afd342414e35660a8a1f3
+  TZImagePickerController: 87a138ae5d585225aaa6c8abe2cface0f0ad19dd
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: cb1bbe7a4abfbcd7ab3784fb5c5dbcab7ab2aaff
+
+COCOAPODS: 1.1.1

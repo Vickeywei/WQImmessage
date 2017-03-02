@@ -13,6 +13,7 @@
 		3E7D41BF1E5E8DBB0090BC0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7D41BD1E5E8DBB0090BC0C /* Main.storyboard */; };
 		3E7D41C11E5E8DBB0090BC0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E7D41C01E5E8DBB0090BC0C /* Assets.xcassets */; };
 		3E7D41C41E5E8DBB0090BC0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7D41C21E5E8DBB0090BC0C /* LaunchScreen.storyboard */; };
+		9D3DE0A408B59421D3B6B86F /* libPods-WQImmessage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B5752EBA9A3DC857FEC60A8 /* libPods-WQImmessage.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		3E7D41C01E5E8DBB0090BC0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E7D41C31E5E8DBB0090BC0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3E7D41C51E5E8DBB0090BC0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B5752EBA9A3DC857FEC60A8 /* libPods-WQImmessage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WQImmessage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		97C4763E67BF36AED8C0E3A7 /* Pods-WQImmessage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQImmessage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WQImmessage/Pods-WQImmessage.debug.xcconfig"; sourceTree = "<group>"; };
+		9CEB3BD70D49B88B82BB1B10 /* Pods-WQImmessage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WQImmessage.release.xcconfig"; path = "Pods/Target Support Files/Pods-WQImmessage/Pods-WQImmessage.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D3DE0A408B59421D3B6B86F /* libPods-WQImmessage.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		293FBDC2030D9A54E335C6CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97C4763E67BF36AED8C0E3A7 /* Pods-WQImmessage.debug.xcconfig */,
+				9CEB3BD70D49B88B82BB1B10 /* Pods-WQImmessage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3E7D41A81E5E8DBB0090BC0C = {
 			isa = PBXGroup;
 			children = (
 				3E7D41B31E5E8DBB0090BC0C /* WQImmessage */,
 				3E7D41B21E5E8DBB0090BC0C /* Products */,
+				293FBDC2030D9A54E335C6CB /* Pods */,
+				60419CED608B4717F9ED9ED0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +95,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		60419CED608B4717F9ED9ED0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B5752EBA9A3DC857FEC60A8 /* libPods-WQImmessage.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E7D41C81E5E8DBB0090BC0C /* Build configuration list for PBXNativeTarget "WQImmessage" */;
 			buildPhases = (
+				0D5FCD37F1FBDBD3F5B1D08A /* [CP] Check Pods Manifest.lock */,
 				3E7D41AD1E5E8DBB0090BC0C /* Sources */,
 				3E7D41AE1E5E8DBB0090BC0C /* Frameworks */,
 				3E7D41AF1E5E8DBB0090BC0C /* Resources */,
+				5A3F647CEF1B7EEA17A078C2 /* [CP] Embed Pods Frameworks */,
+				2C18F84055AE45229C511D9C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D5FCD37F1FBDBD3F5B1D08A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2C18F84055AE45229C511D9C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WQImmessage/Pods-WQImmessage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A3F647CEF1B7EEA17A078C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WQImmessage/Pods-WQImmessage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3E7D41AD1E5E8DBB0090BC0C /* Sources */ = {
@@ -271,6 +346,7 @@
 		};
 		3E7D41C91E5E8DBB0090BC0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97C4763E67BF36AED8C0E3A7 /* Pods-WQImmessage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NYRBZT6Z59;
@@ -283,6 +359,7 @@
 		};
 		3E7D41CA1E5E8DBB0090BC0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CEB3BD70D49B88B82BB1B10 /* Pods-WQImmessage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = NYRBZT6Z59;

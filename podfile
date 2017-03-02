@@ -1,0 +1,12 @@
+target ‘WQImmessage’do
+pod 'NIMSDK', '~> 3.4.0'
+pod 'NIMKit', :subspecs => ['Full']
+pod 'ReactiveCocoa'
+pod 'ReactiveViewModel'
+pod 'ReactiveCocoaLayout'
+pod 'Masonry'
+pod 'YYKit', '~> 1.0.9'
+pod 'Toast', '~> 3.0'
+pod 'Reachability', '~> 3.1.1'
+pod 'IQKeyboardManager'
+end
